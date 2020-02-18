@@ -1,6 +1,32 @@
 package pl.evanec;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 public class User {
 
-    String id;
+    @Id
+    private String ip;
+    private String browser;
+
+    public User(String ip, String browser) {
+        this.ip = ip;
+        this.browser = browser;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public String getBrowser() {
+        return browser;
+    }
+
+    public void setBrowser(String browser) {
+        this.browser = browser;
+    }
 }
