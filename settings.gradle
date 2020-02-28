@@ -1,8 +1,5 @@
 rootProject.name = 'Familiada'
 include 'Model'
 include 'Infrastructure'
-include 'client'
-include 'client'
-findProject(':client')?.name = 'Client'
 include 'Client'
 

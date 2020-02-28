@@ -2,28 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e187ca4-96cd-4781-a05a-4873aaed0b2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/CustomerEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/pl/evanec/FamiliadaAplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/evanec/CrudWithVaadinApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/evanec/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/evanec/CustomerEditor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/evanec/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/evanec/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/build/classes/java/main/pl/evanec/FamiliadaAplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/build/classes/java/main/pl/evanec/FamiliadaAplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/AppFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/AppFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Model/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client/src/main/java/pl/evanec" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -68,6 +68,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\intelij\Familiada\Client\src\main\java\pl\evanec" />
       <recent name="D:\Dev\intelij\Familiada\Model\src\main\java" />
     </key>
   </component>
@@ -97,6 +98,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Familiada [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Familiada" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -116,8 +136,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FamiliadaAplication" />
         <item itemvalue="Gradle.Familiada" />
+        <item itemvalue="Gradle.Familiada [dependencies]" />
+        <item itemvalue="Application.FamiliadaAplication" />
       </list>
     </recent_temporary>
   </component>

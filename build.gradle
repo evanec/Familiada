@@ -1,16 +1,25 @@
 plugins {
-    id 'java'
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
 }
 
-group 'pl.evanec'
-version '0.01'
+subprojects {
 
-sourceCompatibility = 1.8
+    group 'pl.evanec'
+    version '0.01'
 
-repositories {
-    mavenCentral()
-}
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java-library'
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    sourceCompatibility = 1.8
+    repositories {
+        jcenter()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom("org.springframework.boot:spring-boot-dependencies:2.1.7.RELEASE")
+        }
+    }
+
 }
