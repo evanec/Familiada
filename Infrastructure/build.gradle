@@ -7,7 +7,5 @@ dependencyManagement {
 dependencies {
     implementation project(":Model")
     implementation project(":Client")
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'com.vaadin:vaadin-spring-boot-starter'
 }

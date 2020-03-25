@@ -1,0 +1,13 @@
+.logo{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+.textInput{
+    width: 100%;
+}
+
+.button{
+    align-self: center;
+}

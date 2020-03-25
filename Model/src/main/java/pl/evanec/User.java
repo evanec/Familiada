@@ -1,13 +1,18 @@
 package pl.evanec;
 
-import javax.persistence.GeneratedValue;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
+@Entity
 public class User {
 
     @Id
+
     private String ip;
     private String browser;
+
+    public User() {
+    }
 
     public User(String ip, String browser) {
         this.ip = ip;

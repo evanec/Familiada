@@ -2,7 +2,7 @@ plugins {
     id 'com.vaadin' version '0.5.0'
 }
 defaultTasks("clean", "vaadinBuildFrontend", "build")
-
+compileJava.options.encoding = "UTF-8"
 ext {
     set('vaadinVersion', "14.1.16")
 }

@@ -1,0 +1,12 @@
+# /build/
+/build/result
+/build/gwt
+/build/checkout
+/build/classes
+/build/test-output
+/build/integration-test-output
+/build/buildhelpers/com/vaadin/buildhelpers/*.class
+
+/node_modules
+
+/.gradle

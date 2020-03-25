@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e187ca4-96cd-4781-a05a-4873aaed0b2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/static/frontend/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -15,17 +18,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/CustomerEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/CustomerEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/build/classes/java/main/pl/evanec/FamiliadaAplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/build/classes/java/main/pl/evanec/FamiliadaAplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Answer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/AppFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/AppFacade.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/Question.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build/classes/java/main/pl/evanec/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/evanec/RepoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/pl/evanec/RepoTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,16 +53,26 @@
   </component>
   <component name="ProjectId" id="1XzTkTjgOFgBnLH60bF52SOWQ49" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Model/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client/src/main/java/pl/evanec" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend" />
+      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend\styles" />
+      <recent name="D:\Dev\intelij\Familiada\Client\src\frontend" />
       <recent name="D:\Dev\intelij\Familiada\Client\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -68,21 +83,10 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources" />
       <recent name="D:\Dev\intelij\Familiada\Client\src\main\java\pl\evanec" />
       <recent name="D:\Dev\intelij\Familiada\Model\src\main\java" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.FamiliadaAplication">
     <configuration name="FamiliadaAplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -134,9 +138,30 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="RepoTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;pl.evanec.RepoTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Model:cleanTest" />
+            <option value=":Model:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Familiada" />
+        <item itemvalue="Gradle.RepoTests" />
         <item itemvalue="Gradle.Familiada [dependencies]" />
         <item itemvalue="Application.FamiliadaAplication" />
       </list>
@@ -160,10 +185,64 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1637" height="271" key="GridCell.Tab.0.bottom" timestamp="1585149359535">
+      <screen x="1920" y="41" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584551876312" />
+    <state width="1637" height="271" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585149359535" />
+    <state width="1637" height="271" key="GridCell.Tab.0.center" timestamp="1585149359535">
+      <screen x="1920" y="41" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584551876312" />
+    <state width="1637" height="271" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585149359535" />
+    <state width="1637" height="271" key="GridCell.Tab.0.left" timestamp="1585149359535">
+      <screen x="1920" y="41" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584551876312" />
+    <state width="1637" height="271" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585149359535" />
+    <state width="1637" height="271" key="GridCell.Tab.0.right" timestamp="1585149359535">
+      <screen x="1920" y="41" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584551876312" />
+    <state width="1637" height="271" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585149359535" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582917278897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582917278897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582917278897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582917278897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
+    <state x="2323" y="198" key="SettingsEditor" timestamp="1585148392055">
+      <screen x="1920" y="41" width="1680" height="1010" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584552701771" />
+    <state x="2323" y="198" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585148392055" />
+    <state x="406" y="-8" width="1325" height="698" key="dock-window-1" timestamp="1585155221594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="406" y="-8" width="1325" height="698" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585155221594" />
+    <state x="406" y="-8" width="1325" height="698" maximized="true" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585145886001" />
+    <state x="2423" y="258" key="search.everywhere.popup" timestamp="1585146229509">
+      <screen x="1920" y="41" width="1680" height="1010" />
+    </state>
+    <state x="2423" y="258" key="search.everywhere.popup/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585146229509" />
   </component>
 </project>
