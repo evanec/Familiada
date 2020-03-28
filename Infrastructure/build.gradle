@@ -8,4 +8,6 @@ dependencies {
     implementation project(":Model")
     implementation project(":Client")
     implementation 'com.vaadin:vaadin-spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile group: 'org.postgresql', name: 'postgresql'
 }

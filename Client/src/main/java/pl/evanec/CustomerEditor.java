@@ -22,7 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 @SpringComponent
 @UIScope
-public class 7CustomerEditor extends VerticalLayout implements KeyNotifier {
+public class CustomerEditor extends VerticalLayout implements KeyNotifier {
 
 //	private final CustomerRepository repository;
 //
