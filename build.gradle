@@ -1,9 +1,16 @@
 plugins {
     id "io.spring.dependency-management" version "1.0.8.RELEASE"
+    id 'application'
 }
 
-subprojects {
+ext {
+    javaMainClass = "pl.evanec.FamiliadaAplication"
+}
+application {
+    mainClassName = javaMainClass
+}
 
+allprojects {
     group 'pl.evanec'
     version '0.01'
 
@@ -11,10 +18,13 @@ subprojects {
     compileJava.options.encoding = 'UTF-8'
     apply plugin: 'io.spring.dependency-management'
     apply plugin: 'java-library'
-
     sourceCompatibility = 1.8
     repositories {
         jcenter()
+    }
+
+    test {
+        exclude '**/*'
     }
 
     dependencyManagement {
@@ -22,5 +32,4 @@ subprojects {
             mavenBom("org.springframework.boot:spring-boot-dependencies:2.1.7.RELEASE")
         }
     }
-
 }

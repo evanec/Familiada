@@ -2,7 +2,6 @@ plugins {
     id 'com.vaadin' version '0.5.0'
 }
 defaultTasks("clean", "vaadinBuildFrontend", "build")
-compileJava.options.encoding = "UTF-8"
 ext {
     set('vaadinVersion', "14.1.16")
 }
@@ -13,7 +12,7 @@ dependencyManagement {
     }
 }
 dependencies {
-    implementation project(":Model")
+    compile  project(":Model")
     implementation 'com.vaadin:vaadin-spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtimeOnly 'com.h2database:h2'
