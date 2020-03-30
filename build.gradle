@@ -3,21 +3,18 @@ plugins {
     id 'application'
 }
 
-ext {
-    javaMainClass = "pl.evanec.FamiliadaAplication"
-}
 application {
-    mainClassName = javaMainClass
+    mainClassName = "pl.evanec.FamiliadaAplication.main()"
 }
 
 allprojects {
     group 'pl.evanec'
     version '0.01'
-
     apply plugin: 'java'
     compileJava.options.encoding = 'UTF-8'
     apply plugin: 'io.spring.dependency-management'
     apply plugin: 'java-library'
+    apply plugin: 'war'
     sourceCompatibility = 11
     targetCompatibility = 11
     repositories {
