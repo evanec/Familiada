@@ -35,3 +35,8 @@ gradle-app.setting
 # End of https://www.gitignore.io/api/java,gradle
 
 /node_modules
+Client/node_modules
+Client/build
+Infrastructure/build
+Model/build
+.gradle

@@ -1,9 +1,13 @@
+plugins{
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+}
+
+
 dependencyManagement {
     imports {
         mavenBom 'com.vaadin:vaadin-bom:14.1.17'
     }
 }
-
 dependencies {
     implementation project(":Model")
     implementation project(":Client")
