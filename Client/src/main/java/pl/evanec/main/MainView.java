@@ -52,21 +52,21 @@ public class MainView extends AbstractView<MainPresenter> {
 
         add(logo, new Hr(), addQuestionAnswerLayout, new Hr(), addQuestionLayout);
         final String address = UI.getCurrent().getSession().getBrowser().getAddress();
-        List<Question> allQuestions = getPresenter().repo.findAll();
+        List<Question> allQuestions = getPresenter().getAllQuestions();
         questionToAnswer = setQuestionToAnswer();
         addAnswerButton.addClickListener(e -> {
             questionToAnswer.getAnswers().add(new Answer(addAnswerField.getValue(), address, questionToAnswer));
-            getPresenter().repo.save(questionToAnswer);
+            getPresenter().addQuestion(questionToAnswer);
             questionToAnswer = setQuestionToAnswer();
         });
 
         addQuestionButton.addClickListener(e -> {
-            getPresenter().repo.save(new Question(addQuestionField.getValue(), address));
+            getPresenter().addQuestion(new Question(addQuestionField.getValue(), address));
         });
     }
 
     private Question setQuestionToAnswer() {
-        List<Question> allQuestions = getPresenter().repo.findAll();
+        List<Question> allQuestions = getPresenter().getAllQuestions();
         final String address = UI.getCurrent().getSession().getBrowser().getAddress();
         Optional<Question> result = allQuestions.stream().filter(q -> q.getAnswers().stream().noneMatch(a -> a.getIpOfResponder().equals(address))).findAny();
         result.ifPresent(q -> questionToAnswerLabel.setText(q.getQuestion()));

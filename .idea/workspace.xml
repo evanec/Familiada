@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e187ca4-96cd-4781-a05a-4873aaed0b2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/src/main/java/pl/evanec/FamiliadaAplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/pl/evanec/FamiliadaAplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Model/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/QuestionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/QuestionRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/test/java/pl/evanec/RepoTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/frontend/generated-flow-imports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.generated.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.generated.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,23 +69,23 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="pl.evanec" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources" />
-      <recent name="D:\Dev\intelij\Familiada\Client\src\main\java\pl\evanec" />
-      <recent name="D:\Dev\intelij\Familiada\Model\src\main\java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pl.evanec" />
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend" />
       <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend\styles" />
       <recent name="D:\Dev\intelij\Familiada\Client\src\frontend" />
       <recent name="D:\Dev\intelij\Familiada\Client\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.evanec" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.evanec" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources" />
+      <recent name="D:\Dev\intelij\Familiada\Client\src\main\java\pl\evanec" />
+      <recent name="D:\Dev\intelij\Familiada\Model\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="Application.FamiliadaAplication">
@@ -194,28 +208,32 @@
       <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
     <state x="-1073" y="405" width="465" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585325409243" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1585584462632">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1060" y="263" key="FileChooserDialogImpl" timestamp="1585768766225">
+      <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585438213164" />
+    <state x="-1060" y="263" key="FileChooserDialogImpl/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585768766225" />
+    <state width="1637" height="270" key="GridCell.Tab.0.bottom" timestamp="1585759709559">
+      <screen x="-1680" y="41" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="270" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585759709559" />
     <state width="1877" height="280" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585584462632" />
     <state width="1637" height="271" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1585584462632">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="270" key="GridCell.Tab.0.center" timestamp="1585759709559">
+      <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585438213164" />
+    <state width="1637" height="270" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585759709559" />
     <state width="1877" height="280" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585584462632" />
     <state width="1637" height="271" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1585584462632">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="270" key="GridCell.Tab.0.left" timestamp="1585759709559">
+      <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585438213164" />
+    <state width="1637" height="270" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585759709559" />
     <state width="1877" height="280" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585584462632" />
     <state width="1637" height="271" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1585584462632">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="270" key="GridCell.Tab.0.right" timestamp="1585759709559">
+      <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
-    <state width="1637" height="271" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585438213164" />
+    <state width="1637" height="270" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585759709559" />
     <state width="1877" height="280" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585584462632" />
     <state width="1637" height="271" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582917278897">
@@ -234,25 +252,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
+    <state x="-1175" y="245" key="NewModule_or_Project.wizard" timestamp="1585768772943">
+      <screen x="-1680" y="41" width="1680" height="1010" />
+    </state>
+    <state x="-1175" y="245" key="NewModule_or_Project.wizard/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585768772943" />
     <state x="-1277" y="198" key="SettingsEditor" timestamp="1585488397292">
       <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
     <state x="-1277" y="198" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585488397292" />
     <state x="461" y="162" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584552701771" />
     <state x="2323" y="198" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585148392055" />
-    <state x="1975" y="33" width="1559" height="718" maximized="true" key="dock-window-1" timestamp="1585323999963">
+    <state x="2247" y="33" width="1234" height="699" maximized="true" key="dock-window-1" timestamp="1585752432290">
       <screen x="1920" y="41" width="1680" height="1010" />
     </state>
-    <state x="1975" y="33" width="1559" height="718" maximized="true" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585323999963" />
+    <state x="2247" y="33" width="1234" height="699" maximized="true" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585752432290" />
     <state x="-847" y="41" width="854" height="1017" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585318072914" />
     <state x="406" y="-8" width="1325" height="698" maximized="true" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585145886001" />
-    <state x="-1680" y="41" width="1565" height="728" maximized="true" key="dock-window-2" timestamp="1585234346127">
+    <state x="-7" y="0" width="974" height="1047" maximized="true" key="dock-window-2" timestamp="1585829706579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="974" height="1047" maximized="true" key="dock-window-2/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585829706579" />
+    <state x="-1680" y="41" width="1565" height="728" maximized="true" key="dock-window-2/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585234346127" />
+    <state x="-1177" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1585783623791">
       <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
-    <state x="-1680" y="41" width="1565" height="728" maximized="true" key="dock-window-2/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585234346127" />
-    <state x="2423" y="258" key="search.everywhere.popup" timestamp="1585146229509">
-      <screen x="1920" y="41" width="1680" height="1010" />
-    </state>
+    <state x="-1177" y="258" width="672" height="678" key="search.everywhere.popup/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585783623791" />
     <state x="2423" y="258" key="search.everywhere.popup/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585146229509" />
   </component>
 </project>
