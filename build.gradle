@@ -4,6 +4,8 @@ plugins {
     id 'com.vaadin' version '0.6.0'
 }
 
+defaultTasks("clean", "build", "bootRun")
+
 allprojects {
     group 'pl.evanec'
     version '0.01'
