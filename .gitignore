@@ -37,8 +37,12 @@ gradle-app.setting
 /node_modules
 Client/node_modules
 Client/build
+Client/target
+Client/webpack*
+Client/package*
 Infrastructure/build
 Model/build
 .idea/
-
+package*
+webpack*
 .gradle
