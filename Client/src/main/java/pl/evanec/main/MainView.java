@@ -6,6 +6,7 @@ import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.html.Hr;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.icon.VaadinIcon;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
@@ -22,8 +23,10 @@ import java.util.Optional;
 public class MainView extends AbstractView<MainPresenter> {
 
     final Label logo;
+    Label faq;
     final TextField addQuestionField;
     private final Button addQuestionButton;
+    private final Button questionSucksButton;
     final TextField addAnswerField;
     private final Button addAnswerButton;
     final Label questionToAnswerLabel;
@@ -39,18 +42,29 @@ public class MainView extends AbstractView<MainPresenter> {
         this.addAnswerField = new TextField();
         addAnswerField.setClassName("textInput");
         this.addQuestionField = new TextField();
+        addQuestionField.setThemeName("size-xl");
         addQuestionField.setClassName("textInput");
         this.addAnswerButton = new Button("Dodaj odpowiedź do pytania", VaadinIcon.PLUS.create());
         addAnswerButton.setClassName("button");
-        this.addQuestionButton = new Button("Dodaj pytanie do bazy", VaadinIcon.PLUS.create());
+        addAnswerButton.addThemeName("size-l");
+
+        this.questionSucksButton = new Button("Pytanie jest słabe", VaadinIcon.THUMBS_DOWN_O.create());
+        questionSucksButton.setClassName("button");
+        questionSucksButton.addThemeName("error");
+        this.addQuestionButton = new Button("Dodaj pytanie", VaadinIcon.PLUS.create());
         addQuestionButton.setClassName("button");
-        this.questionToAnswerLabel = new Label("Ni ma wincyj pytan");
+        this.questionToAnswerLabel = new Label("Nie ma więcej pytań, może dodaj nowe?");
         questionToAnswerLabel.setClassName("question");
         // build layout
-        VerticalLayout addQuestionLayout = new VerticalLayout(addQuestionField, addQuestionButton);
-        VerticalLayout addQuestionAnswerLayout = new VerticalLayout(questionToAnswerLabel, addAnswerField, addAnswerButton);
-
-        add(logo, new Hr(), addQuestionAnswerLayout, new Hr(), addQuestionLayout);
+        HorizontalLayout buttons = new HorizontalLayout(addAnswerButton,questionSucksButton);
+        buttons.setClassName("button");
+        faq = new Label("Zostań jednym z naszych Ankietowanych dodając odpowiedzi na pytania z zakresu szerokopojętej fantastyki, Sciece fiction, filmów, książek, gier, papierowych rpg i tym podobnych. Możesz też dodać własną propozycję pytania.");
+        faq.setClassName("faq");
+        VerticalLayout addQuestionLayout = new VerticalLayout( addQuestionField, addQuestionButton);
+        addQuestionLayout.setClassName("containers");
+        VerticalLayout addQuestionAnswerLayout = new VerticalLayout(questionToAnswerLabel, addAnswerField, buttons);
+        addQuestionAnswerLayout.setClassName("containers");
+        add(logo, new Hr(), faq, new Hr(), addQuestionAnswerLayout, new Hr(), addQuestionLayout);
         final String address = UI.getCurrent().getSession().getBrowser().getAddress();
         List<Question> allQuestions = getPresenter().getAllQuestions();
         questionToAnswer = setQuestionToAnswer();
