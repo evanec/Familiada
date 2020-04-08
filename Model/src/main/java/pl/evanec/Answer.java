@@ -10,6 +10,7 @@ public class Answer {
     private Long id;
     String answer;
     String ipOfResponder;
+    boolean questionSucks = false;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "question_id")
@@ -17,12 +18,15 @@ public class Answer {
 
     public Answer() {
     }
-    public Answer(String answer, String ipOfResponder) {
-        this.answer = answer;
-        this.ipOfResponder = ipOfResponder;
-    }
+
     public Answer(String answer, String ipOfResponder, Question question) {
         this.answer = answer;
+        this.ipOfResponder = ipOfResponder;
+        this.question = question;
+    }
+
+    public Answer(boolean questionSucks, String ipOfResponder, Question question) {
+        this.questionSucks = questionSucks;
         this.ipOfResponder = ipOfResponder;
         this.question = question;
     }
@@ -53,6 +57,9 @@ public class Answer {
 
     @Override
     public String toString() {
+        if (questionSucks ) {
+            return "question sucks";
+        }
         return answer;
     }
 }

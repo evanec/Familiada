@@ -1,10 +1,20 @@
 package pl.evanec;
 
-public class AppFacade {
+import java.util.List;
 
-    private final QuestionRepo questionRepo;
+public class AppFacade implements QuestionsService{
 
-    public AppFacade(QuestionRepo questionRepo) {
+    private final QuestionsRepository questionRepo;
+
+    public AppFacade(QuestionsRepository questionRepo) {
         this.questionRepo = questionRepo;
+    }
+
+    public void AddQuestion(Question question){
+        questionRepo.save(question);
+    }
+
+    public List<Question> getAllQuestions(){
+        return questionRepo.findAll();
     }
 }

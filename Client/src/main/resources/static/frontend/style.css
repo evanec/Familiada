@@ -1,12 +1,6 @@
-@import "bower_components/vaadin-lumo-styles/color.html";
-@import "bower_components/vaadin-lumo-styles/sizing.html";
-@import "bower_components/vaadin-lumo-styles/spacing.html";
-@import "bower_components/vaadin-lumo-styles/style.html";
-@import "bower_components/vaadin-lumo-styles/typography.html";
-
 .logo{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3em;
     text-align: center;
     width: 100%;
 }
@@ -22,9 +16,17 @@
     margin: auto;
 }
 
+body{
+   // background-image: url("gaming-pattern.png");
+}
+
+.buttons{
+    height: 2em;
+}
+
 .question{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2em;
     text-align: center;
     width: 100%;
 }
