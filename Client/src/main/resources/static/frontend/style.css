@@ -1,38 +1,121 @@
+@font-face {
+  font-family: 'Atami-Display';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Atami-Display'), url('Atami-Display.otf') format('opentype');
+}
+
 .logo{
+    padding: 20px 0 20px 0;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     width: 100%;
+    font-family: Atami-Display;
+    background-color: darkseagreen;
+    margin-bottom: 5%;
 }
 .textInput{
     width: 100%;
+  --lumo-text-field-size: 3em;
 }
 
 .button{
     align-self: center;
+     flex-grow: 1;
+     height: 3em;
 }
+
+.middleButton{margin: 0 10px 0 10px;}
+
 
 .window{
     margin: auto;
-}
-
-body{
-   // background-image: url("gaming-pattern.png");
+    width: 50%;
+    align-self: center;
 }
 
 .buttons{
-    height: 2em;
+    display: flex;
+    width: 100%;
 }
 
 .question{
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .faq {
     font-size: 0.8em;
     align-self: center;
+         margin: 5px;
 }
 
+hr {
+   margin: 3em 0 3em 0;
+     border: 1px solid #8fbc8f;
+}
+
+.bubble
+{
+position: absolute;
+left: 105%;
+top: -100%;
+width: 325px;
+padding: 10px;
+background: #8fbc8f;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 9px 12px 9px 0;
+border-color: transparent #8fbc8f;
+display: block;
+width: 0;
+z-index: 1;
+left: -12px;
+top: 73px;
+}
+
+.bubbleLeft
+{
+position: absolute;
+right: 105%;
+top: -100%;
+width: 325px;
+padding: 10px;
+background: #8fbc8f;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+top: 0%;
+}
+
+.bubbleLeft:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 9px 0 9px 12px;
+border-color: transparent #8fbc8f;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -9px;
+right: -12px;
+top: 50%;
+}
+
+.textTooltip{
+    position:relative;
+        margin-bottom: 1em;
+}

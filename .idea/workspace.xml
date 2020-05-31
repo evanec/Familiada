@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e187ca4-96cd-4781-a05a-4873aaed0b2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/static/frontend/double-bubble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/static/frontend/gaming-pattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/pl/evanec/questions/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/QuestionsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/QuestionsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/frontend/src/styles/views/Atami-Display.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/frontend/src/styles/views/shared-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/frontend/src/views/admin-view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/frontend/src/views/admin-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/static/frontend/Atami-Display.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/static/frontend/shared-styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/admin/AdminPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/admin/AdminPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/main/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/admin/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/pl/evanec/admin/AdminView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/resources/static/frontend/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/static/frontend/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/AppFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/AppFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/pl/evanec/QuestionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/src/main/java/pl/evanec/questions/JPAQuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +43,47 @@
                 <item name="Familiada" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Familiada" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Familiada" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Familiada" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Familiada" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Familiada" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Familiada" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -60,6 +99,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -75,35 +115,37 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Model/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client/src/main/java/pl/evanec/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client/src/main/resources/static/frontend" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\intelij\Familiada\Client\frontend\src\styles\views" />
+      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend" />
+      <recent name="D:\Dev\intelij\Familiada\Client\frontend\src\views" />
+      <recent name="D:\Dev\intelij\Familiada\Client\frontend" />
+      <recent name="D:\Dev\intelij\Familiada\Client\frontend\src\views\dashboard" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.evanec" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend" />
-      <recent name="D:\Dev\intelij\Familiada\Infrastructure\src\main\java\pl\evanec\questions" />
-      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources" />
-      <recent name="D:\Dev\intelij\Familiada\Client\src\main\java\pl\evanec" />
-      <recent name="D:\Dev\intelij\Familiada\Model\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pl.evanec" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend" />
-      <recent name="D:\Dev\intelij\Familiada\Client\src\main\resources\static\frontend\styles" />
-      <recent name="D:\Dev\intelij\Familiada\Client\src\frontend" />
-      <recent name="D:\Dev\intelij\Familiada\Client\src\main\java" />
+      <recent name="D:\Dev\intelij\Familiada\Client\frontend\src\styles\views" />
+      <recent name="D:\Dev\intelij\Familiada\Client" />
+      <recent name="D:\Dev\intelij\Familiada\Client\frontend" />
+      <recent name="D:\Dev\intelij\Familiada\Client\frontend\src\views\dashboard" />
     </key>
   </component>
   <component name="RunManager" selected="Application.FamiliadaAplication">
@@ -217,11 +259,17 @@
     </state>
     <state x="-1248" y="204" key="#Project_Structure/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585407416745" />
     <state x="2352" y="204" key="#Project_Structure/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443994077" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1586187174904">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1386" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590432874730">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state x="-1386" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590432874730" />
+    <state x="-1011" y="262" key="#com.intellij.ide.util.MemberChooser" timestamp="1590876941595">
+      <screen x="-1680" y="33" width="1680" height="1010" />
+    </state>
+    <state x="-1011" y="262" key="#com.intellij.ide.util.MemberChooser/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590876941595" />
     <state x="-1011" y="270" key="#com.intellij.ide.util.MemberChooser/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585327103602" />
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586187174904" />
+    <state x="2589" y="270" key="#com.intellij.ide.util.MemberChooser/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1586440540505" />
     <state x="-1073" y="405" width="465" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585325409243">
       <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
@@ -230,68 +278,83 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="411" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586266229529" />
-    <state x="504" y="160" key="FileChooserDialogImpl" timestamp="1586279958914">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1060" y="255" key="FileChooserDialogImpl" timestamp="1590840125492">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
     <state x="504" y="160" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586279958914" />
+    <state x="-1060" y="255" key="FileChooserDialogImpl/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590840125492" />
     <state x="-1060" y="263" key="FileChooserDialogImpl/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585768766225" />
-    <state width="1323" height="77" key="GridCell.Tab.0.bottom" timestamp="1586274279197">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="369" key="GridCell.Tab.0.bottom" timestamp="1590918598188">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
-    <state width="1323" height="77" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586274279197" />
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586366851441" />
+    <state width="1637" height="369" key="GridCell.Tab.0.bottom/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590918598188" />
     <state width="1637" height="270" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1586024920959" />
-    <state width="1877" height="179" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586169065813" />
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
-    <state width="1323" height="77" key="GridCell.Tab.0.center" timestamp="1586274279197">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="103" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586885320651" />
+    <state width="1637" height="103" key="GridCell.Tab.0.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1586873132838" />
+    <state width="1637" height="369" key="GridCell.Tab.0.center" timestamp="1590918598188">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
-    <state width="1323" height="77" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586274279197" />
+    <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586366851440" />
+    <state width="1637" height="369" key="GridCell.Tab.0.center/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590918598188" />
     <state width="1637" height="270" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1586024920959" />
-    <state width="1877" height="179" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586169065813" />
-    <state width="1637" height="271" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
-    <state width="1323" height="77" key="GridCell.Tab.0.left" timestamp="1586274279197">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="103" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586885320651" />
+    <state width="1637" height="103" key="GridCell.Tab.0.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1586873132838" />
+    <state width="1637" height="369" key="GridCell.Tab.0.left" timestamp="1590918598188">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
-    <state width="1323" height="77" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586274279197" />
+    <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586366851440" />
+    <state width="1637" height="369" key="GridCell.Tab.0.left/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590918598188" />
     <state width="1637" height="270" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1586024920959" />
-    <state width="1877" height="179" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586169065813" />
-    <state width="1637" height="271" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
-    <state width="1323" height="77" key="GridCell.Tab.0.right" timestamp="1586274279197">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="103" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586885320651" />
+    <state width="1637" height="103" key="GridCell.Tab.0.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1586873132837" />
+    <state width="1637" height="369" key="GridCell.Tab.0.right" timestamp="1590918598188">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
-    <state width="1323" height="77" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586274279197" />
+    <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586366851440" />
+    <state width="1637" height="369" key="GridCell.Tab.0.right/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590918598188" />
     <state width="1637" height="270" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1586024920959" />
-    <state width="1877" height="179" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586169065813" />
-    <state width="1637" height="271" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585443538632" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582917278897">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="103" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1586885320651" />
+    <state width="1637" height="103" key="GridCell.Tab.0.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1586873132838" />
+    <state width="1637" height="336" key="GridCell.Tab.1.bottom" timestamp="1590877326629">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.bottom/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590877326629" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1582917278897">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="336" key="GridCell.Tab.1.center" timestamp="1590877326628">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.center/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590877326628" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1582917278897">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="336" key="GridCell.Tab.1.left" timestamp="1590877326628">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.left/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590877326628" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1582917278897">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1637" height="336" key="GridCell.Tab.1.right" timestamp="1590877326628">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.right/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590877326628" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1582917278897" />
     <state x="-1175" y="245" key="NewModule_or_Project.wizard" timestamp="1585768772943">
       <screen x="-1680" y="41" width="1680" height="1010" />
     </state>
     <state x="-1175" y="245" key="NewModule_or_Project.wizard/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585768772943" />
-    <state x="-1277" y="198" key="SettingsEditor" timestamp="1585488397292">
-      <screen x="-1680" y="41" width="1680" height="1010" />
+    <state x="-1277" y="190" key="SettingsEditor" timestamp="1590846787309">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state x="-1277" y="190" key="SettingsEditor/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590846787309" />
     <state x="-1277" y="198" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585488397292" />
     <state x="461" y="162" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584552701771" />
     <state x="2323" y="198" key="SettingsEditor/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585148392055" />
-    <state x="2247" y="33" width="1234" height="699" maximized="true" key="dock-window-1" timestamp="1585752432290">
-      <screen x="1920" y="41" width="1680" height="1010" />
+    <state x="-1264" y="274" width="847" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1590420917250">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state x="-1264" y="274" width="847" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590420917250" />
+    <state x="232" y="-8" width="1332" height="633" maximized="true" key="dock-window-1" timestamp="1590872603155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="232" y="-8" width="1332" height="633" maximized="true" key="dock-window-1/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590872603155" />
     <state x="2247" y="33" width="1234" height="699" maximized="true" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585752432290" />
     <state x="-847" y="41" width="854" height="1017" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585318072914" />
     <state x="406" y="-8" width="1325" height="698" maximized="true" key="dock-window-1/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585145886001" />
@@ -300,14 +363,48 @@
     </state>
     <state x="-7" y="0" width="974" height="1047" maximized="true" key="dock-window-2/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585829706579" />
     <state x="-1680" y="41" width="1565" height="728" maximized="true" key="dock-window-2/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585234346127" />
-    <state x="379" y="0" width="607" height="728" key="find.popup" timestamp="1586205745581">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1214" y="33" width="747" height="1010" key="find.popup" timestamp="1590872811343">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
     <state x="379" y="0" width="607" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586205745581" />
-    <state x="-1177" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1585783623791">
-      <screen x="-1680" y="41" width="1680" height="1010" />
+    <state x="-1214" y="33" width="747" height="1010" key="find.popup/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590872811343" />
+    <state x="-1177" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1590872816781">
+      <screen x="-1680" y="33" width="1680" height="1010" />
     </state>
+    <state x="-1177" y="250" width="672" height="678" key="search.everywhere.popup/1920.32.1680.1010/-1680.33.1680.1010/0.0.1920.1040@-1680.33.1680.1010" timestamp="1590872816781" />
     <state x="-1177" y="258" width="672" height="678" key="search.everywhere.popup/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@-1680.41.1680.1010" timestamp="1585783623791" />
     <state x="2423" y="258" key="search.everywhere.popup/1920.41.1680.1010/-1680.41.1680.1010/0.0.1920.1040@1920.41.1680.1010" timestamp="1585146229509" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/pl/evanec/admin/AdminPresenter.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
+    <option name="sizePresets">
+      <list>
+        <SizePreset>
+          <option name="caption" value="Phone" />
+          <option name="height" value="568" />
+          <option name="width" value="320" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Tablet" />
+          <option name="height" value="1024" />
+          <option name="width" value="768" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Desktop" />
+          <option name="height" value="900" />
+          <option name="width" value="1440" />
+        </SizePreset>
+      </list>
+    </option>
   </component>
 </project>
