@@ -57,7 +57,7 @@ public class Answer {
 
     @Override
     public String toString() {
-        if (questionSucks ) {
+        if (questionSucks) {
             return "question sucks";
         }
         return answer;

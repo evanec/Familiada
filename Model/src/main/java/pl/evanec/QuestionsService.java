@@ -1,7 +1,5 @@
 package pl.evanec;
 
-import pl.evanec.Question;
-
 import java.util.List;
 
 public interface QuestionsService {

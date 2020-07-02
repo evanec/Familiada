@@ -10,8 +10,8 @@ import pl.evanec.QuestionsRepository;
 class Config {
 
    @Bean
-   AppFacade bukiFacade(@Autowired  QuestionsRepository userRepository) {
-        return new AppFacade(userRepository);
+   AppFacade appFacade(QuestionsRepository repo) {
+        return new AppFacade(repo);
    }
 
 }

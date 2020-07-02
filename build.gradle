@@ -12,8 +12,8 @@ allprojects {
     apply plugin: 'java'
     compileJava.options.encoding = 'UTF-8'
     apply plugin: 'io.spring.dependency-management'
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
     repositories {
         jcenter()
     }

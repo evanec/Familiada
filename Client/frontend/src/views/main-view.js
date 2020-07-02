@@ -1,13 +1,13 @@
 import { PolymerElement } from '@polymer/polymer/polymer-element.js';
 import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 import '@vaadin/vaadin-button/vaadin-button.js';
-class AdminView extends PolymerElement {
+class MainView extends PolymerElement {
   static get template() {
     return html`
 <link rel="stylesheet" href="frontend/style.css">
     <div class="logo">FANTASTYCZNA FAMILIADA</div>
 <div class="window">
-    <div>
+    <div id="answerSection">
         <div class="question" id="question">Ile waży koń trojański?</div>
                 <div class="textTooltip">
         <vaadin-text-field id="addAnswerField" class="textInput" theme="medium" placeholder="Wprowadź tutaj odpowiedź do pytania">
@@ -34,8 +34,8 @@ class AdminView extends PolymerElement {
 
     <div>
                     <div class="textTooltip">
-         <vaadin-text-field class="textInput" placeholder="Dodaj pytanie"></vaadin-text-field>
-                 <div class="bubbleLeft">Możesz też dodać własną propozycję pytania.</div>
+         <vaadin-text-field class="textInput" id="addQuestionField" placeholder="Dodaj pytanie"></vaadin-text-field>
+                 <div class="bubbleLeft", id="questionTooltip">Możesz też dodać własną propozycję pytania.</div>
                   </div>
         <div class="buttons">
             <vaadin-button theme="size-l" id="saveQuestion" class="button">
@@ -49,8 +49,8 @@ class AdminView extends PolymerElement {
   }
 
   static get is() {
-    return 'admin-view';
+    return 'main-view';
   }
 }
 
-customElements.define(AdminView.is, AdminView);
+customElements.define(MainView.is, MainView);
