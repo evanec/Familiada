@@ -47,6 +47,12 @@ allprojects {
         imports {
             mavenBom "com.vaadin:vaadin-bom:${vaadinVersion}"
         }
-    }
 
+    }
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://maven.vaadin.com/vaadin-addons"
+        }
+    }
 }

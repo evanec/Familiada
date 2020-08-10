@@ -56,4 +56,9 @@ public class Question {
         return id;
     }
 
+
+    @Override
+    public String toString() {
+        return question;
+    }
 }

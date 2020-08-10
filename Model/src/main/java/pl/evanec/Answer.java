@@ -8,7 +8,8 @@ public class Answer {
     @Id
     @GeneratedValue
     private Long id;
-    String answer;
+    String answerRaw;
+    String answerStandardized;
     String ipOfResponder;
     boolean questionSucks = false;
 
@@ -20,7 +21,8 @@ public class Answer {
     }
 
     public Answer(String answer, String ipOfResponder, Question question) {
-        this.answer = answer;
+        this.answerRaw = answer;
+        this.answerStandardized = answer;
         this.ipOfResponder = ipOfResponder;
         this.question = question;
     }
@@ -31,20 +33,28 @@ public class Answer {
         this.question = question;
     }
 
-    public Question getBook() {
-        return question;
+    public boolean isQuestionSucks() {
+        return questionSucks;
     }
 
-    public void setBook(Question book) {
-        this.question = book;
+    public void setQuestionSucks(boolean questionSucks) {
+        this.questionSucks = questionSucks;
     }
 
-    public String getAnswer() {
-        return answer;
+    public String getAnswerRaw() {
+        return answerRaw;
     }
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
+    public void setAnswerRaw(String answerRaw) {
+        this.answerRaw = answerRaw;
+    }
+
+    public String getAnswerStandardized() {
+        return answerStandardized;
+    }
+
+    public void setAnswerStandardized(String answerStandardized) {
+        this.answerStandardized = answerStandardized;
     }
 
     public String getIpOfResponder() {
@@ -60,6 +70,6 @@ public class Answer {
         if (questionSucks) {
             return "question sucks";
         }
-        return answer;
+        return answerStandardized;
     }
 }
