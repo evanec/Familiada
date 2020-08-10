@@ -45,5 +45,4 @@ Model/build
 package*
 webpack*
 .gradle
-gradle/wrapper
 .idea
