@@ -5,6 +5,8 @@ plugins {
 }
 
 defaultTasks("clean", "build", "bootRun")
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
 
 allprojects {
     group 'pl.evanec'
