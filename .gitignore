@@ -42,7 +42,8 @@ Client/webpack*
 Client/package*
 Infrastructure/build
 Model/build
-.idea/
 package*
 webpack*
 .gradle
+gradle/wrapper
+.idea
