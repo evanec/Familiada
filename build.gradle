@@ -2,13 +2,20 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
     id 'com.vaadin' version '0.6.0'
-    id "com.moowork.node" version "1.3.1"
+    id 'org.siouan.frontend' version '1.1.0'
 }
 
 defaultTasks("clean", "build", "bootRun")
 task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
 
+frontend {
+    nodeVersion = '10.15.3'
+    // See 'scripts' section in your 'package.json file'
+    cleanScript = 'run clean'
+    assembleScript = 'run assemble'
+    checkScript = 'run check'
+}
 allprojects {
     group 'pl.evanec'
     version '0.01'
