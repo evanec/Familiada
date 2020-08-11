@@ -2,11 +2,13 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
     id 'com.vaadin' version '0.6.0'
+    id "org.siouan.frontend" version "3.0.0"
 }
-
 defaultTasks("clean", "build", "bootRun")
-task stage(dependsOn: ['build', 'clean'])
-build.mustRunAfter clean
+
+frontend {
+    nodeVersion = '12.16.2'
+}
 
 allprojects {
     group 'pl.evanec'
@@ -56,5 +58,6 @@ allprojects {
         maven {
             url "https://maven.vaadin.com/vaadin-addons"
         }
+
     }
 }
