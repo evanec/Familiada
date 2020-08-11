@@ -16,6 +16,10 @@ frontend {
     assembleScript = 'run assemble'
     checkScript = 'run check'
 }
+
+node {
+    download = true
+}
 allprojects {
     group 'pl.evanec'
     version '0.01'
