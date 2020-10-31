@@ -5,7 +5,7 @@ plugins {
     id "org.siouan.frontend" version "3.0.0"
 }
 defaultTasks("clean", "build", "bootRun")
-//task stage(dependsOn: ["clean", "build"])
+task stage(dependsOn: ["clean", "build"])
 
 allprojects {
     group 'pl.evanec'
