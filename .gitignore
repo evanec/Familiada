@@ -41,6 +41,8 @@ Client/target
 Client/webpack*
 Client/package*
 Infrastructure/build
+Infrastructure/node_modules
+node
 Model/build
 package*
 webpack*
