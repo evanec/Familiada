@@ -6,7 +6,7 @@ plugins {
 
 dependencyManagement {
     imports {
-        mavenBom 'com.vaadin:vaadin-bom:14.1.16'
+        mavenBom "com.vaadin:vaadin-bom:${vaadinVersion}"
         mavenBom("org.springframework.boot:spring-boot-dependencies:2.1.7.RELEASE")
     }
 }

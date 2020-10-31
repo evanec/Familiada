@@ -4,14 +4,14 @@ plugins{
 
 dependencyManagement {
     imports {
-        mavenBom 'com.vaadin:vaadin-bom:14.1.17'
+        mavenBom "com.vaadin:vaadin-bom:${vaadinVersion}"
     }
 }
 
 dependencies {
     implementation project(":Model")
     implementation project(":Client")
-    implementation 'com.vaadin:vaadin-spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile group: 'org.postgresql', name: 'postgresql'
 }
+
