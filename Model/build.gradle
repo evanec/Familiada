@@ -1,6 +1,5 @@
 plugins {
     id 'io.spring.dependency-management'
-    id 'java'
 }
 
 dependencies {
@@ -9,6 +8,6 @@ dependencies {
 
 dependencyManagement {
     imports {
-        mavenBom("org.springframework.boot:spring-boot-dependencies:2.1.7.RELEASE")
+        mavenBom("org.springframework.boot:spring-boot-dependencies:2.3.4.RELEASE")
     }
 }

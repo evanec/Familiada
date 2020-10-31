@@ -13,7 +13,7 @@ public class Question {
     String question;
     String ipOfResponder;
     @OneToMany(mappedBy="question", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    List<Answer> answers = new ArrayList();
+    List<Answer> answers = new ArrayList<>();
 
     public Question() {
     }

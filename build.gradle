@@ -1,15 +1,11 @@
 plugins {
-    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
     id 'com.vaadin' version '0.14.3.7'
     id "org.siouan.frontend" version "3.0.0"
 }
 defaultTasks("clean", "build", "bootRun")
 //task stage(dependsOn: ["clean", "build"])
-
-//frontend {
-//    nodeVersion = '12.16.2'
-//}
 
 allprojects {
     group 'pl.evanec'
@@ -28,13 +24,6 @@ allprojects {
         set('vaadinVersion', "14.3.7")
     }
 
-    configurations {
-        developmentOnly
-        runtimeClasspath {
-            extendsFrom developmentOnly
-        }
-    }
-
     dependencies {
         implementation('com.vaadin:vaadin-spring-boot-starter') {
          //Webjars are only needed when running in Vaadin 13 compatibility mode
@@ -43,6 +32,8 @@ allprojects {
              "org.webjars.bowergithub.vaadin", "org.webjars.bowergithub.webcomponents"]
                     .forEach { group -> exclude(group: group) }
         }
+
+
     }
 
     dependencyManagement {
