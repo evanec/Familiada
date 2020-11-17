@@ -42,6 +42,8 @@ class MainView extends PolymerElement {
             <iron-icon icon="lumo:plus" slot="prefix"></iron-icon>
                 Dodaj pytanie
             </vaadin-button>
+                    <div class="bubble">Dzięki za pomoc!</div>
+                     </div>
         </div>
     </div>
 </div>

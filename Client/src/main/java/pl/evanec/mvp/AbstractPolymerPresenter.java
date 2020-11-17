@@ -1,6 +1,6 @@
 package pl.evanec.mvp;
 
-public abstract class AbstractPolymerPresenter<T extends AbstractPolymerView>{
+public abstract class AbstractPolymerPresenter<T extends AbstractPolymerView> {
 
     public T view;
 

@@ -29,15 +29,15 @@ public class AnswerCharts extends VerticalLayout {
     HorizontalLayout charts = new HorizontalLayout();
 
 
-    public AnswerCharts(List<Question> questions) {
+    public AnswerCharts(List<Question> questions, AdminPresenter presenter) {
         this.questions = questions;
         charts.setWidth("1000px");
         labelSelect.setItems(questions);
         labelSelect.setLabel("Select question");
-        labelSelect.addValueChangeListener((value)->{
+        labelSelect.addValueChangeListener((value) -> {
             charts.removeAll();
             ApexCharts one = addChart(value.getValue());
-                    ApexCharts two = ApexSucksCharts(value.getValue());
+            ApexCharts two = ApexSucksCharts(value.getValue());
             charts.add(one);
             charts.add(two);
         });
@@ -52,7 +52,7 @@ public class AnswerCharts extends VerticalLayout {
         });
     }
 
-    private ApexCharts addChart(Question question){
+    private ApexCharts addChart(Question question) {
         Map<String, Double> counts = question.getAnswers().stream().filter(e -> !e.isQuestionSucks()).collect(Collectors.groupingBy(e -> e.getAnswerStandardized(), counting()));
         ApexCharts pieChart = ApexChartsBuilder.get()
                 .withChart(ChartBuilder.get().withType(Type.pie).withWidth("450").withHeight("450").build())
@@ -62,13 +62,13 @@ public class AnswerCharts extends VerticalLayout {
         return pieChart;
     }
 
-    private ApexCharts ApexSucksCharts(Question question){
+    private ApexCharts ApexSucksCharts(Question question) {
         Double sumOfSucks = question.getAnswers().stream().filter(e -> e.isQuestionSucks()).count() + 0.0;
         Double sumOfOther = question.getAnswers().size() - sumOfSucks;
 
         ApexCharts pieChart = ApexChartsBuilder.get()
                 .withChart(ChartBuilder.get().withType(Type.pie).withWidth("500").withHeight("500").build())
-                .withLabels("Proper answers","Sucks")
+                .withLabels("Proper answers", "Sucks")
                 .withSeries(sumOfOther, sumOfSucks)
                 .build();
         return pieChart;

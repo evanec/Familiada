@@ -9,9 +9,9 @@ import pl.evanec.QuestionsRepository;
 @Configuration
 class Config {
 
-   @Bean
-   AppFacade appFacade(QuestionsRepository repo) {
+    @Bean
+    AppFacade appFacade(QuestionsRepository repo) {
         return new AppFacade(repo);
-   }
+    }
 
 }

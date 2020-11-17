@@ -16,6 +16,7 @@ public abstract class AbstractView<T extends AbstractPresenter> extends Vertical
         this.presenter = presenter;
         init();
     }
+
     public abstract void init();
 
 }

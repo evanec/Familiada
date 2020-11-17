@@ -16,18 +16,16 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class AsnwersTab extends VerticalLayout
-
-{
+public class AsnwersTab extends VerticalLayout {
 
     @Autowired
     public QuestionsService service;
     Select<Question> labelSelect = new Select<>();
 
-    public AsnwersTab(List<Question> questions) {
+    public AsnwersTab(List<Question> questions, AdminPresenter presenter) {
         Set<Question> selectedQuestions = new HashSet<>();
         Button hide = new Button("Hide question");
-        hide.addClickListener(e ->{
+        hide.addClickListener(e -> {
 
         });
         add(hide);
@@ -42,7 +40,7 @@ public class AsnwersTab extends VerticalLayout
         });
         labelSelect.setItems(questions);
         labelSelect.setLabel("Select question");
-        labelSelect.addValueChangeListener((value)->{
+        labelSelect.addValueChangeListener((value) -> {
             grid.setItems(value.getValue().getAnswers());
         });
         labelSelect.setValue(questions.get(0));

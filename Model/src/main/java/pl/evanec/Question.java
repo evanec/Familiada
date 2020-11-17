@@ -11,12 +11,15 @@ public class Question {
     @GeneratedValue
     private Long id;
     String question;
+
+    boolean removed = false;
     String ipOfResponder;
-    @OneToMany(mappedBy="question", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     List<Answer> answers = new ArrayList<>();
 
     public Question() {
     }
+
     public Question(String question, String ipOfResponder) {
         this.question = question;
         this.ipOfResponder = ipOfResponder;
@@ -26,6 +29,14 @@ public class Question {
         this.question = question;
         this.ipOfResponder = ipOfResponder;
         this.answers = answers;
+    }
+
+    public boolean isRemoved() {
+        return removed;
+    }
+
+    public void setRemoved(boolean removed) {
+        this.removed = removed;
     }
 
     public String getQuestion() {
@@ -55,7 +66,6 @@ public class Question {
     public Long getId() {
         return id;
     }
-
 
     @Override
     public String toString() {
