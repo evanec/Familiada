@@ -18,14 +18,13 @@ public class AllQuestionTab extends VerticalLayout {
 
     public AllQuestionTab(Collection<Question> questions, AdminPresenter presenter) {
         Set<Question> selectedQuestions = new HashSet<>();
+
         Button hide = new Button("Hide question");
-        Button showHidden = new Button("Show hidden");
-        Button hideHidden = new Button("hide hidden");
-        hide.addClickListener(e -> {
-            presenter.deleteQuestions(selectedQuestions);
-        });
-        HorizontalLayout buttons = new HorizontalLayout(hide, showHidden, hideHidden);
-        add(buttons);
+       // Button showHidden = new Button("Show hidden");
+      //  Button hideHidden = new Button("hide hidden");
+
+        //HorizontalLayout buttons = new HorizontalLayout(hide, showHidden, hideHidden);
+        add(hide);
         Grid<Question> grid = new Grid<>();
         grid.setSelectionMode(Grid.SelectionMode.MULTI);
 
@@ -35,12 +34,17 @@ public class AllQuestionTab extends VerticalLayout {
             selectedQuestions.clear();
             selectedQuestions.addAll(e.getValue());
         });
-        showHidden.addClickListener(e -> {
-            grid.setItems(questions);
+        hide.addClickListener(e -> {
+            presenter.deleteQuestions(selectedQuestions);
+            grid.setItems(presenter.getAllQuestions());
         });
-        hideHidden.addClickListener(e -> {
-            grid.setItems(questions.stream().filter(q -> !q.isRemoved()).collect(Collectors.toList()));
-        });
+
+//        showHidden.addClickListener(e -> {
+//            grid.setItems(questions);
+//        });
+//        hideHidden.addClickListener(e -> {
+//            grid.setItems(questions.stream().filter(q -> !q.isRemoved()).collect(Collectors.toList()));
+//        });
         grid.setItems(questions.stream().filter(q -> !q.isRemoved()).collect(Collectors.toList()));
         grid.addColumn(Question::getId).setHeader("id").setWidth("50px");
         grid.addColumn(Question::getQuestion).setHeader("question");
