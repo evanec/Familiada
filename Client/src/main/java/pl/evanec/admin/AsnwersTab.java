@@ -3,6 +3,7 @@ package pl.evanec.admin;
 import com.github.appreciated.apexcharts.ApexCharts;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.data.selection.MultiSelect;
@@ -25,12 +26,15 @@ public class AsnwersTab extends VerticalLayout {
     public AsnwersTab(List<Question> questions, AdminPresenter presenter) {
         Set<Question> selectedQuestions = new HashSet<>();
         Button hide = new Button("Hide question");
+        Button standarized = new Button("Set as standarized");
+        Button merge = new Button("Merge answers");
         hide.addClickListener(e -> {
 
         });
-        add(hide);
+
         Grid<Answer> grid = new Grid<>();
         grid.setSelectionMode(Grid.SelectionMode.MULTI);
+
 
         MultiSelect<Grid<Answer>, Answer> multiSelect =
                 grid.asMultiSelect();
@@ -44,8 +48,9 @@ public class AsnwersTab extends VerticalLayout {
             grid.setItems(value.getValue().getAnswers());
         });
         labelSelect.setValue(questions.get(0));
-        add(labelSelect);
-
+        HorizontalLayout toolbar = new HorizontalLayout(labelSelect, hide, standarized, merge);
+        toolbar.setAlignItems(Alignment.END);
+        add(toolbar);
         grid.addColumn(Answer::getAnswerRaw).setHeader("raw").setWidth("100px");
         grid.addColumn(Answer::getAnswerStandardized).setHeader("standardized");
         grid.addColumn(Answer::getIpOfResponder).setHeader("ip").setWidth("150px");

@@ -59,10 +59,11 @@ public class MainView extends AbstractPolymerView<MainPresenter> {
     }
 
     private Question questionToAnswer;
-    final private String address = UI.getCurrent().getSession().getBrowser().getAddress();
+    private String address;
 
     @Override
     public void init() {
+        address = UI.getCurrent().getSession().getBrowser().getAddress();
         setQuestionToAnswer();
         saveAnswer.addClickListener(e -> {
             questionToAnswer.getAnswers().add(new Answer(addAnswerField.getValue(), address, questionToAnswer));
@@ -84,6 +85,7 @@ public class MainView extends AbstractPolymerView<MainPresenter> {
 
         saveQuestion.addClickListener(e -> {
             getPresenter().addQuestion(new Question(addQuestionField.getValue(), address));
+            addQuestionField.clear();
             setQuestionToAnswer();
         });
     }

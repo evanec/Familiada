@@ -37,7 +37,9 @@ public class AdminView extends AbstractView<AdminPresenter> {
         add(tabs);
         HorizontalLayout container = new HorizontalLayout();
         container.setWidthFull();
+        container.setHeightFull();
         add(container);
+        setHeightFull();
         Map<Tab, Component> tabsToPages = new HashMap<>();
         tabsToPages.put(tab1, new AllQuestionTab(questions, getPresenter()));
         tabsToPages.put(tab2, new AnswerCharts(questions, getPresenter()));

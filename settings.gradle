@@ -1,5 +1,10 @@
 rootProject.name = 'Familiada'
 include 'Model'
 include 'Infrastructure'
-include 'Client'
 
+if (vaadinFrontend.toBoolean()) {
+    include 'Client'
+}
+else if (reactFrontend.toBoolean()) {
+    include 'Client'
+}

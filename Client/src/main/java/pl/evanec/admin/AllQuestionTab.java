@@ -50,5 +50,6 @@ public class AllQuestionTab extends VerticalLayout {
         grid.addColumn(Question::getQuestion).setHeader("question");
         grid.addColumn(Question::getIpOfResponder).setHeader("ip").setWidth("150px");
         add(grid);
+        setHeightFull();
     }
 }

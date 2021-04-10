@@ -19,30 +19,30 @@ public class FamiliadaAplication {
     @Autowired
     private AppFacade app;
 
-    @Bean
-    InitializingBean sendDatabase() {
-        return () -> {
-            Question test1 = new Question("pytanie1", "1");
-            Question test2 = new Question("pytanie2", "2");
-            Question test3 = new Question("pytanie3", "3");
-            List<Answer> answers = new ArrayList<>();
-            answers.add(new Answer("odp1", "1", test1));
-            answers.add(new Answer("odp2", "2", test1));
-            answers.add(new Answer("odp1", "3", test1));
-            answers.add(new Answer("odp3", "4", test1));
-            answers.add(new Answer("odp1", "5", test1));
-            answers.add(new Answer("odp3", "6", test1));
-
-            answers.add(new Answer(true, "7", test1));
-            answers.add(new Answer(true, "8", test1));
-            answers.add(new Answer(true, "9", test1));
-
-            test1.setAnswers(answers);
-
-
-            app.AddQuestion(test1);
-            app.AddQuestion(test2);
-            app.AddQuestion(test3);
-        };
-    }
+//    @Bean
+//    InitializingBean sendDatabase() {
+//        return () -> {
+//            Question test1 = new Question("pytanie1", "1");
+//            Question test2 = new Question("pytanie2", "2");
+//            Question test3 = new Question("pytanie3", "3");
+//            List<Answer> answers = new ArrayList<>();
+//            answers.add(new Answer("odp1", "1", test1));
+//            answers.add(new Answer("odp2", "2", test1));
+//            answers.add(new Answer("odp1", "3", test1));
+//            answers.add(new Answer("odp3", "4", test1));
+//            answers.add(new Answer("odp1", "5", test1));
+//            answers.add(new Answer("odp3", "6", test1));
+//
+//            answers.add(new Answer(true, "7", test1));
+//            answers.add(new Answer(true, "8", test1));
+//            answers.add(new Answer(true, "9", test1));
+//
+//            test1.setAnswers(answers);
+//
+//
+//            app.AddQuestion(test1);
+//            app.AddQuestion(test2);
+//            app.AddQuestion(test3);
+//        };
+//    }
 }
