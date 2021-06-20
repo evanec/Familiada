@@ -1,13 +1,12 @@
 package pl.evanec;
 
-import java.util.Collection;
 import java.util.List;
 
 public interface QuestionsRepository {
 
-    List<Question> findAll();
+    List<QuestionTO> findAllQuestions();
 
-    Question save(Question question);
+    QuestionTO save(QuestionTO question);
 
-    void delete(Question question);
+    void delete(QuestionTO question);
 }

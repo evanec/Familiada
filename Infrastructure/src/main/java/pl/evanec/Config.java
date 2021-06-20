@@ -1,12 +1,11 @@
-package pl.evanec.questions;
+package pl.evanec;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import pl.evanec.AppFacade;
-import pl.evanec.QuestionsRepository;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
+@EnableTransactionManagement
 class Config {
 
     @Bean

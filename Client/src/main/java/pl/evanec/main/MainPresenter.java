@@ -2,7 +2,7 @@ package pl.evanec.main;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import pl.evanec.Question;
+import pl.evanec.QuestionTO;
 import pl.evanec.QuestionsService;
 import pl.evanec.mvp.AbstractPolymerPresenter;
 
@@ -14,11 +14,11 @@ public class MainPresenter extends AbstractPolymerPresenter<MainView> {
     @Autowired
     public QuestionsService service;
 
-    public List<Question> getAllQuestions() {
+    public List<QuestionTO> getAllQuestions() {
         return service.getAllQuestions();
     }
 
-    public void addQuestion(Question question) {
+    public void addQuestion(QuestionTO question) {
         service.AddQuestion(question);
     }
 

@@ -2,7 +2,7 @@ package pl.evanec.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import pl.evanec.Question;
+import pl.evanec.QuestionTO;
 import pl.evanec.QuestionsService;
 import pl.evanec.mvp.AbstractPresenter;
 
@@ -15,16 +15,16 @@ public class AdminPresenter extends AbstractPresenter<AdminView> {
     @Autowired
     public QuestionsService service;
 
-    public List<Question> getAllQuestions() {
-        return service.getAllQuestions();
+    public List<QuestionTO> getAllQuestions() {
+        return null;
     }
 
-    public void addQuestion(Question question) {
-        service.AddQuestion(question);
+    public void addQuestion(QuestionTO question) {
+
     }
 
-    public void deleteQuestions(Collection<Question> questions) {
-        service.deleteQuestions(questions);
+    public void deleteQuestions(Collection<QuestionTO> questions) {
+
     }
 
 }

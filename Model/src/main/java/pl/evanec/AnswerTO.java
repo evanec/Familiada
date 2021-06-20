@@ -1,33 +1,25 @@
 package pl.evanec;
 
-import javax.persistence.*;
+public class AnswerTO {
 
-@Entity
-public class Answer {
-
-    @Id
-    @GeneratedValue
-    private Long id;
     String answerRaw;
     String answerStandardized;
     String ipOfResponder;
     boolean questionSucks = false;
+    private Long id;
+    private QuestionTO question;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "question_id")
-    private Question question;
-
-    public Answer() {
+    public AnswerTO() {
     }
 
-    public Answer(String answer, String ipOfResponder, Question question) {
+    public AnswerTO(String answer, String ipOfResponder, QuestionTO question) {
         this.answerRaw = answer;
         this.answerStandardized = answer;
         this.ipOfResponder = ipOfResponder;
         this.question = question;
     }
 
-    public Answer(boolean questionSucks, String ipOfResponder, Question question) {
+    public AnswerTO(boolean questionSucks, String ipOfResponder, QuestionTO question) {
         this.questionSucks = questionSucks;
         this.ipOfResponder = ipOfResponder;
         this.question = question;
@@ -63,6 +55,14 @@ public class Answer {
 
     public void setIpOfResponder(String ipOfResponder) {
         this.ipOfResponder = ipOfResponder;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     @Override

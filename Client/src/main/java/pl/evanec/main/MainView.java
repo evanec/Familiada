@@ -12,8 +12,8 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
-import pl.evanec.Answer;
-import pl.evanec.Question;
+import pl.evanec.AnswerTO;
+import pl.evanec.QuestionTO;
 import pl.evanec.mvp.AbstractPolymerView;
 
 import java.util.List;
@@ -58,7 +58,7 @@ public class MainView extends AbstractPolymerView<MainPresenter> {
         super(presenter);
     }
 
-    private Question questionToAnswer;
+    private QuestionTO questionToAnswer;
     private String address;
 
     @Override
@@ -66,33 +66,36 @@ public class MainView extends AbstractPolymerView<MainPresenter> {
         address = UI.getCurrent().getSession().getBrowser().getAddress();
         setQuestionToAnswer();
         saveAnswer.addClickListener(e -> {
-            questionToAnswer.getAnswers().add(new Answer(addAnswerField.getValue(), address, questionToAnswer));
+            questionToAnswer.getAnswers().add(new AnswerTO(addAnswerField.getValue(), address, questionToAnswer));
             getPresenter().addQuestion(questionToAnswer);
             setQuestionToAnswer();
+            addAnswerField.clear();
         });
 
         report.addClickListener(e -> {
-            questionToAnswer.getAnswers().add(new Answer(true, address, questionToAnswer));
+            questionToAnswer.getAnswers().add(new AnswerTO(true, address, questionToAnswer));
             getPresenter().addQuestion(questionToAnswer);
             setQuestionToAnswer();
+            addAnswerField.clear();
         });
 
         ignore.addClickListener(e -> {
-            questionToAnswer.getAnswers().add(new Answer("", address, questionToAnswer));
+            questionToAnswer.getAnswers().add(new AnswerTO("", address, questionToAnswer));
             getPresenter().addQuestion(questionToAnswer);
             setQuestionToAnswer();
+            addAnswerField.clear();
         });
 
         saveQuestion.addClickListener(e -> {
-            getPresenter().addQuestion(new Question(addQuestionField.getValue(), address));
+            getPresenter().addQuestion(new QuestionTO(addQuestionField.getValue(), address));
             addQuestionField.clear();
             setQuestionToAnswer();
         });
     }
 
     private void setQuestionToAnswer() {
-        List<Question> allQuestions = getPresenter().getAllQuestions();
-        Optional<Question> result = allQuestions.stream().filter(q -> q.getAnswers().stream().noneMatch(a -> a.getIpOfResponder().equals(address))).findAny();
+        List<QuestionTO> allQuestions = getPresenter().getAllQuestions();
+        Optional<QuestionTO> result = allQuestions.stream().filter(q -> q.getAnswers().stream().noneMatch(a -> a.getIpOfResponder().equals(address))).findAny();
 
         result.ifPresentOrElse(q -> {
                     questionToAnswer = q;

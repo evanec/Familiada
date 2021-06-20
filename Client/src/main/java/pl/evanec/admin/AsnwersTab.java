@@ -1,6 +1,5 @@
 package pl.evanec.admin;
 
-import com.github.appreciated.apexcharts.ApexCharts;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -8,11 +7,10 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.data.selection.MultiSelect;
 import org.springframework.beans.factory.annotation.Autowired;
-import pl.evanec.Answer;
-import pl.evanec.Question;
+import pl.evanec.AnswerTO;
+import pl.evanec.QuestionTO;
 import pl.evanec.QuestionsService;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -21,10 +19,10 @@ public class AsnwersTab extends VerticalLayout {
 
     @Autowired
     public QuestionsService service;
-    Select<Question> labelSelect = new Select<>();
+    Select<QuestionTO> labelSelect = new Select<>();
 
-    public AsnwersTab(List<Question> questions, AdminPresenter presenter) {
-        Set<Question> selectedQuestions = new HashSet<>();
+    public AsnwersTab(List<QuestionTO> questions, AdminPresenter presenter) {
+        Set<QuestionTO> selectedQuestions = new HashSet<>();
         Button hide = new Button("Hide question");
         Button standarized = new Button("Set as standarized");
         Button merge = new Button("Merge answers");
@@ -32,11 +30,11 @@ public class AsnwersTab extends VerticalLayout {
 
         });
 
-        Grid<Answer> grid = new Grid<>();
+        Grid<AnswerTO> grid = new Grid<>();
         grid.setSelectionMode(Grid.SelectionMode.MULTI);
 
 
-        MultiSelect<Grid<Answer>, Answer> multiSelect =
+        MultiSelect<Grid<AnswerTO>, AnswerTO> multiSelect =
                 grid.asMultiSelect();
         multiSelect.addValueChangeListener(e -> {
 //            selectedQuestions.clear();
@@ -51,9 +49,9 @@ public class AsnwersTab extends VerticalLayout {
         HorizontalLayout toolbar = new HorizontalLayout(labelSelect, hide, standarized, merge);
         toolbar.setAlignItems(Alignment.END);
         add(toolbar);
-        grid.addColumn(Answer::getAnswerRaw).setHeader("raw").setWidth("100px");
-        grid.addColumn(Answer::getAnswerStandardized).setHeader("standardized");
-        grid.addColumn(Answer::getIpOfResponder).setHeader("ip").setWidth("150px");
+        grid.addColumn(AnswerTO::getAnswerRaw).setHeader("raw").setWidth("100px");
+        grid.addColumn(AnswerTO::getAnswerStandardized).setHeader("standardized");
+        grid.addColumn(AnswerTO::getIpOfResponder).setHeader("ip").setWidth("150px");
         add(grid);
     }
 }

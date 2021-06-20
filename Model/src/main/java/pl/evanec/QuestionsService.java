@@ -5,10 +5,9 @@ import java.util.List;
 
 public interface QuestionsService {
 
-    void AddQuestion(Question question);
+    void AddQuestion(QuestionTO question);
 
-    void deleteQuestions(Collection<Question> questions);
+    void deleteQuestions(Collection<QuestionTO> questions);
 
-    List<Question> getAllQuestions();
-
+    List<QuestionTO> getAllQuestions();
 }

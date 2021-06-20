@@ -1,31 +1,25 @@
 package pl.evanec;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-public class Question {
+public class QuestionTO {
 
-    @Id
-    @GeneratedValue
-    private Long id;
     String question;
-
     boolean removed = false;
     String ipOfResponder;
-    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    List<Answer> answers = new ArrayList<>();
+    List<AnswerTO> answers = new ArrayList<>();
+    private Long id;
 
-    public Question() {
+    public QuestionTO() {
     }
 
-    public Question(String question, String ipOfResponder) {
+    public QuestionTO(String question, String ipOfResponder) {
         this.question = question;
         this.ipOfResponder = ipOfResponder;
     }
 
-    public Question(String question, String ipOfResponder, List<Answer> answers) {
+    public QuestionTO(String question, String ipOfResponder, List<AnswerTO> answers) {
         this.question = question;
         this.ipOfResponder = ipOfResponder;
         this.answers = answers;
@@ -47,11 +41,11 @@ public class Question {
         this.question = question;
     }
 
-    public List<Answer> getAnswers() {
+    public List<AnswerTO> getAnswers() {
         return answers;
     }
 
-    public void setAnswers(List<Answer> answers) {
+    public void setAnswers(List<AnswerTO> answers) {
         this.answers = answers;
     }
 
@@ -65,6 +59,10 @@ public class Question {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     @Override
