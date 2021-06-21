@@ -1,3 +1,36 @@
-group 'pl.evanec'
-version '0.01'
+plugins {
+    id 'org.springframework.boot' version '2.4.2'
+    id 'java'
+    id "com.github.node-gradle.node" version "3.0.1"
+}
 
+apply plugin: 'io.spring.dependency-management'
+
+group = 'pl.evanec'
+version = '1.2.0'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+ //   implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+node {
+    version = '14.15.5'
+}
+
+task buildReactApp(type: NodeTask, dependsOn: 'npmInstall') {
+    script = project.file('node_modules/webpack/bin/webpack.js')
+    args = [
+            '--mode', 'development',
+            '--entry', './src/main/webapp/javascript/Main.jsx',
+            '-o', './src/main/resources/static/dist'
+    ]
+}
+
+processResources.dependsOn 'buildReactApp'
+clean.delete << file('node_modules')
+clean.delete << file('src/main/resources/static/dist')
