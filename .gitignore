@@ -38,7 +38,5 @@ gradle-app.setting
 **/build
 **/target
 
-package*
-webpack*
 .gradle
 .idea
