@@ -3,8 +3,9 @@ include 'Model'
 include 'Infrastructure'
 
 if (vaadinFrontend.toBoolean()) {
-    include 'Client'
+    include 'ClientVaadin'
 }
 else if (reactFrontend.toBoolean()) {
-    include 'Client'
+    include 'ClientReact'
 }
+

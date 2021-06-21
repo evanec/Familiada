@@ -34,16 +34,10 @@ gradle-app.setting
 
 # End of https://www.gitignore.io/api/java,gradle
 
-/node_modules
-Client/node_modules
-Client/build
-Client/target
-Client/webpack*
-Client/package*
-Infrastructure/build
-Infrastructure/node_modules
-node
-Model/build
+**/node_modules
+**/build
+**/target
+
 package*
 webpack*
 .gradle
