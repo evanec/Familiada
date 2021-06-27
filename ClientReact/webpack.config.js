@@ -1,7 +1,4 @@
 const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     devtool: 'source-map',
@@ -24,10 +21,6 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     }, plugins: [
-         isDevelopment && new ReactRefreshPlugin(),
-         new HtmlWebpackPlugin({
-           filename: './index.html',
-           template: './src/main/resources/static/index.html',
-         }),
-       ].filter(Boolean),
+     new ReactRefreshPlugin(),
+       ].filter(Boolean)
 };
