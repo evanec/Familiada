@@ -1,22 +1,5 @@
-import React, { Component } from "react";
-import ReactDOM from 'react-dom';
-import '../css/Main.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import * as React from 'react';
+import { render } from 'react-dom';
+import App from './App';
 
-class Main extends Component {
-    render() {
-        return (
-            <div id="main">
-                <h1>Demo fdffdf</h1>
-<div class="spinner-border" role="status">
-  <span class="sr-only">Loading...</span>
-</div>
-            </div>
-        );
-    }
-}
-
-ReactDOM.render(
-    <Main />,
-    document.getElementById('react-mountpoint')
-);
+render(<App />, document.getElementById('react-mountpoint'));
