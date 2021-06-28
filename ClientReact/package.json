@@ -18,5 +18,9 @@
     "webpack-cli": "^4.5.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "build": "cross-env NODE_ENV=production webpack"
   }
 }

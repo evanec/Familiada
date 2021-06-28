@@ -11,7 +11,7 @@ task buildReactApp(type: NodeTask, dependsOn: 'npmInstall') {
     args = [
             '--mode', 'development',
             '--entry', './src/main/webapp/javascript/Main.jsx',
-            '-o', './src/main/resources/static/dist','--hot'
+            '-o', './src/main/resources/static/dist', '--hot'
     ]
 }
 

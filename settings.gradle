@@ -9,3 +9,10 @@ else if (reactFrontend.toBoolean()) {
     include 'ClientReact'
 }
 
+if (EEElastic.toBoolean()) {
+    include 'InfrastructureElasticEE'
+}
+else if (SpringH2.toBoolean()) {
+    include 'InfrastructureH2Spring'
+}
+
