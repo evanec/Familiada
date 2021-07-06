@@ -1,27 +1,54 @@
 package pl.evanec.questions;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.apache.http.HttpHost;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import pl.evanec.QuestionTO;
 import pl.evanec.QuestionsRepository;
 
+import java.io.IOException;
+import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public interface JPAQuestionRepository extends JpaRepository<QuestionEntity, Long>, QuestionsRepository {
+@Component
+public class JPAQuestionRepository implements QuestionsRepository {
 
     @Override
-    default QuestionTO save(QuestionTO questionTO) {
-        QuestionEntity entity = save(QuestionEntity.convertToEntity(questionTO));
-        return QuestionEntity.convertToTO(entity);
+    public QuestionTO save(QuestionTO questionTO) {
+        RestHighLevelClient client = new RestHighLevelClient(
+                RestClient.builder(
+                        new HttpHost("localhost", 9200, "http"),
+                        new HttpHost("localhost", 9201, "http")));
+
+        IndexRequest indexRequest = new IndexRequest("posts")
+                .id("1")
+                .source("user", "kimchy",
+                        "postDate", new Date(),
+                        "message", "trying out Elasticsearch");
+
+        try {
+            client.index(indexRequest, RequestOptions.DEFAULT);
+
+
+            client.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     @Override
-    default void delete(QuestionTO questionTO) {
-        delete(QuestionEntity.convertToEntity(questionTO));
+    public void delete(QuestionTO questionTO) {
+
     }
 
     @Override
-    default List<QuestionTO> findAllQuestions() {
-        return findAll().stream().map(QuestionEntity::convertToTO).collect(Collectors.toList());
+    public List<QuestionTO> findAllQuestions() {
+        return null;
     }
 }

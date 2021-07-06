@@ -7,16 +7,12 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
 public class QuestionEntity {
 
     String question;
     boolean removed = false;
     String ipOfResponder;
-    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     List<AnswerEntity> answers = new ArrayList<>();
-    @Id
-    @GeneratedValue
     private Long id;
 
     public QuestionEntity() {

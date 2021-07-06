@@ -17,9 +17,25 @@ function App() {
       <React.Suspense fallback={<h1>Loading</h1>}>
         <LazyComponent />
       </React.Suspense>
-      <Button variant="primary">Primary</Button>
+      <Button variant="primary" onClick={toggleButtonState}> Primary</Button>
     </div>
   );
 }
+
+function toggleButtonState () {
+fetch('http://localhost:8080/api/questions/', {
+  method: 'POST',
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    firstParam: 'yourValue',
+    secondParam: 'yourOtherValue'
+  })
+});
+
+}
+
 
 export default App;

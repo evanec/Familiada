@@ -19,15 +19,17 @@ dependencies {
         implementation project(":ClientVaadin")
     }
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    compile group: 'org.postgresql', name: 'postgresql'
     implementation 'org.springframework.boot:spring-boot-devtools'
+    compile 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.13.2'
+    compile 'org.elasticsearch.client:elasticsearch-rest-client:7.13.2'
+    compile 'org.elasticsearch:elasticsearch:7.13.2'
     compile group: 'org.modelmapper', name: 'modelmapper', version: '2.1.1'
-    runtimeOnly 'com.h2database:h2'
-
-
-
 }
-
+repositories {
+    maven {
+        url "https://snapshots.elastic.co/maven/"
+    }
+}
 defaultTasks('Elastic')
 
 tasks.register('Elastic'){

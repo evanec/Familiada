@@ -16,7 +16,7 @@ public class QuestionController {
         this.questionService = questionService;
     }
 
-    @PostMapping
+    @PostMapping("/questions")
     void addQuestion(@RequestBody QuestionTO request) {
         questionService.AddQuestion(request);
     }

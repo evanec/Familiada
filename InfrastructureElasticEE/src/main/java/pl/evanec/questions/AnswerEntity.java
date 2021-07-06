@@ -5,17 +5,12 @@ import pl.evanec.AnswerTO;
 
 import javax.persistence.*;
 
-@Entity
 public class AnswerEntity {
     String answerRaw;
     String answerStandardized;
     String ipOfResponder;
     boolean questionSucks = false;
-    @Id
-    @GeneratedValue
     private Long id;
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "question_id")
     private QuestionEntity question;
 
     public AnswerEntity() {
